@@ -9,13 +9,7 @@
     <!-- fontawesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script>
-        $('.grid').masonry({
-            itemSelector: '.grid-item',
-            columnWidth: 300,
-            glutter: 20
-        });
-    </script>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/menu.css">
@@ -28,9 +22,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-white">
             <div class="blur-box"><a class="navbar-brand" href="#">Sconto</a></div>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <!-- <ul class="navbar-nav">
                     <li class="nav-item active">
@@ -45,20 +37,50 @@
                     <li class="nav-item">
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                     </li>
-
+                    
                 </ul> -->
+                <ul class="navbar-nav">
+                    <li class="filter-item">
+                        <h4>Їжа</h4>
+                        <select name="" id="">
+                            <option value="1" disabled selected>Обери смаколики</option>  
+                            <option value="1">Фастфуд</option>  
+                            <option value="1">Українська кухня</option>
+                            <option value="1">Кава</option>  
+                        </select>
+                    </li>
+                    <li class="filter-item">
+                        <h5>Час доби</h5>
+                        <select name="" id="">
+                            <option value="1" disabled selected>Обери час</option>  
+                            <option value="1">Фастфуд</option>  
+                            <option value="1">Українська кухня</option>
+                            <option value="1">Кава</option>  
+                        </select>
+                    </li>
+                </ul>
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <input class="search-input" type="text" placeholder="Нажми й шукай" name="search">
+                        <button class="search-button" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div>
 
+                <div class="navbar-toggler" onclick="displayModal()">
+                    <span class="navbar-toggler-text">Фільтри</span>
+                    <span class="navbar-toggler-icon"></span>
+                </div>
             </div>
-            <div class="search-container">
-                <form action="/action_page.php">
-                    <input type="text" placeholder="Нажми й шукай" name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
+
         </nav>
     </header>
-    <div class="menu-container">
+    <div class="menu-container notDisplay" id="filter-container">
         <div class="menu-box">
+            <div class="close-box">
+                <i class="fa fa-close" id="menu-close" onclick="notDisplayModal()"></i>
+            </div>
             <h4>Пошук</h4>
             <div class="search-container">
                 <form action="/action_page.php">
@@ -69,15 +91,24 @@
             <br>
             <h4>Їжа</h4>
             <select name="" id="">
-                <option value="1">Обери смаколики</option>  
+                <option value="1" disabled selected>Обери смаколики</option>  
                 <option value="1">Фастфуд</option>  
                 <option value="1">Українська кухня</option>
                 <option value="1">Кава</option>  
-
-
             </select>
+            <br>
+            <br>
+            <h4>Час доби</h4>
+            <select name="" id="">
+                <option value="1" disabled selected>Обери час</option>  
+                <option value="1">Фастфуд</option>  
+                <option value="1">Українська кухня</option>
+                <option value="1">Кава</option>  
+            </select>
+            <br>
+            <br>
+            <button class="btn btn-primary">Шукати</button>
         </div>
-
     </div>
     <main>
         <div class="main-container">
@@ -119,6 +150,17 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/menu.js"></script>
+
+
+    <!-- mansory settings -->
+    <!-- <script>
+        $('.grid').masonry({
+            itemSelector: '.grid-item',
+            columnWidth: 300,
+            glutter: 20
+        });
+    </script> -->
 </body>
 
 </html>

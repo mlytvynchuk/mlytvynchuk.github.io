@@ -9,22 +9,37 @@
     background: rgba(0, 0, 0, 0.9);
     z-index: 9999;
     justify-content: flex-start;
-    
     align-items: center;
     .menu-box{
         padding: 20px;
         background: #fff;
-        width:600px; 
+        width:50vh; 
         margin-top: 200px;
+        border-radius: 5px;
+        button{
+            background: black;
+            border: none;
+            :active{
+                border: none;
+            }
+        }
         select{
             width: 100% !important;
             border: none;
             padding: 10px !important;
             border-radius: 5px;
         }
+        .close-box{
+            display: flex;
+            justify-content: flex-end;
+            font-size: 20px;
+            i{
+                cursor: pointer;
+            }
+        }
         .search-container{
         ::placeholder{
-            color: black;
+            color: black ;
         }
         input{
             width: 100% !important;
@@ -37,9 +52,59 @@
         button{
             display: none
         }
-        
-        
     }
     }
-
+    
+}
+.notDisplay{
+    display: none;
+}
+header{
+    .filter-item{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+    }
+    h4,h5{
+        font-size: 14px;
+        padding-top: 8px;
+        padding-right: 5px;
+    }
+    select{
+        background: #f2f2f2;
+            border: none;
+            padding: 5px;
+    }
+    .navbar-toggler{
+        border: none;
+        font-size: 16px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        cursor: pointer;
+        
+    }
+    .search-form{
+        input[type="text"]{
+            width: px;
+            padding: 5px;
+            font-size: 60px;
+            line-height: 1;
+            }
+    }
+    .search-input{
+        border-radius: 5px 0 0 5px;
+        background: #f2f2f2;
+        font-size: 16px !important;
+        &::placeholder{
+            color: black;
+        }
+        
+    }
+    .search-button{
+        border-radius: 0 5px 5px 0;
+        font-size: 16px;
+    }
 }
