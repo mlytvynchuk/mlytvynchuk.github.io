@@ -90,14 +90,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="discount-detils">
+                <div class="discount-details">
                     <h4>Детальна інформація</h4>
+
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolor hic reprehenderit natus eaque, quos nemo nostrum cumque minus exercitationem corporis debitis nihil dolore dignissimos, iste eligendi a? Numquam, sapiente.</p>
                 </div>
                 <br>
 
                 <div>
                     <h5>Розташування закладу</h5>
+                    <hr>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41194.12633610549!2d24.03510786737754!3d49.811768923129385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x901c9675afad0b82!2sBeer+House!5e0!3m2!1suk!2sua!4v1559729173591!5m2!1suk!2sua"
                         width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 </div>
@@ -169,11 +171,45 @@
                             </div>
                         </div>
                     </div>
+                    <div class="grid">
+                        <div class="grid-item white-color height300" onclick="displayDiscount()">
+                            <div class="overlay-dark">
+                                <div class="discountCard">
+                                    <h3 class="discountTitle">Піца від 30 грн</h3>
+                                    <div class="discountCafe">Сіли з'їли</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid" onclick="displayDiscount()">
+                            <div class="grid-item height300" style="background-image: url(../assets/img/coffee.jpg)!important">
+                                <div class="overlay-light">
+                                    <div class="discountCard">
+                                        <h3 class="discountTitle">Кава 1+1=3</h3>
+                                        <div class="discountCafe">Копальня кави</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid-item" style="background-image: url(../assets/img/pivas.jpg)!important" onclick="displayDiscount()">
+                                <div class="overlay-dark">
+                                    <div class="discountCard">
+                                        <h3 class="discountTitle">Пиво за пів ціни </h3>
+                                        <div class="discountCafe">Крафтова чайка</div>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <div class="grid">
+                                <div class="grid-item white-color height300" style="background-image: url(../assets/img/coffee.jpg)!important" onclick="displayDiscount()">
+                                    <div class="overlay-light">
+                                        <div class="discountCard">
+                                            <h3 class="discountTitle">Кава 1+1=3</h3>
+                                            <div class="discountCafe">Копальня кави</div>
+                                        </div>
+                                    </div>
+                                </div>
 
-
-                </div>
-            </div>
+                            </div>
+                        </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

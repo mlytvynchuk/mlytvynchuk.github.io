@@ -16,11 +16,12 @@
   clear: both;
 }
 .blur-box {
-  background: #ddd;
+  background: #000;
   font-weight: 300;
   cursor: pointer;
 }
 .navbar-brand {
+  color: #fff !important;
   padding: 5px;
   margin-left: 13px;
 }
@@ -73,6 +74,9 @@
 }
 .height320 {
   height: 320px;
+}
+.height300 {
+  height: 300px;
 }
 .bg-white {
   background: #fff;
