@@ -1,21 +1,19 @@
 .menu-container{
-    position: fixed !important;
+    position: absolute;
     display: flex;
     flex-direction: column;
-    position: absolute;
     top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     background: rgba(0, 0, 0, 0.9);
     z-index: 9999;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    padding-bottom: 50px; 
+    padding-top: 50px; 
     .menu-box{
         padding: 20px;
         background: #fff;
         width:50vh; 
-        margin-top: 200px;
+        
         border-radius: 5px;
         button{
             background: black;
@@ -119,6 +117,21 @@ header{
     #discount-modal{
         .menu-box{
             width: 90%;
+        }
+    }
+}
+.discount-details{
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+@media(max-width: 1110px){
+    .menu-box{
+        .grid-item{
+            width: 95%;
+            margin-right: 20px; 
         }
     }
 }
