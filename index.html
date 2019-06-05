@@ -76,6 +76,13 @@
 
         </nav>
     </header>
+    <div class="menu-container notDisplay" id="discount-modal">
+        <div class="menu-box">
+            <div class="close-box">
+                <i class="fa fa-close" id="menu-close" onclick="notDisplayDiscount()"></i>
+            </div>
+        </div>
+    </div>
     <div class="menu-container notDisplay" id="filter-container">
         <div class="menu-box">
             <div class="close-box">
@@ -116,7 +123,7 @@
                 <h1>Знижки</h1>
             </div>
             <div class="grid">
-                <div class="grid-item white-color height320">
+                <div class="grid-item white-color height320" onclick="displayDiscount()">
                     <div class="overlay-dark">
                         <div class="discountCard">
                             <h3 class="discountTitle">Піца від 30 грн</h3>
@@ -124,7 +131,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid-item" style="background-image: url(../assets/img/pivas.jpg)!important">
+                <div class="grid-item" style="background-image: url(../assets/img/pivas.jpg)!important" onclick="displayDiscount()">
                     <div class="overlay-dark">
                         <div class="discountCard">
                             <h3 class="discountTitle">Пиво за пів ціни </h3>
@@ -132,7 +139,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="grid">
+                <div class="grid" onclick="displayDiscount()">
                     <div class="grid-item white-color" style="background-image: url(../assets/img/coffee.jpg)!important">
                         <div class="overlay-light">
                             <div class="discountCard">
