@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/menu.css">
+    <link rel="stylesheet" href="assets/css/add.css">
 
     <title>Sconto</title>
 </head>
@@ -74,8 +75,11 @@
                 </div>
             </div>
 
+            <div class="blur-box"><button class="navbar-brand" id="add" onclick="displayAddDiscount()">Додати</button></div>
         </nav>
     </header>
+
+
     <div class="menu-container notDisplay" id="discount-modal">
         <div class="menu-box">
             <div class="close-box">
@@ -106,6 +110,7 @@
             </div>
         </div>
     </div>
+  
     <div class="menu-container notDisplay" id="filter-container">
         <div class="menu-box">
             <div class="close-box">
@@ -139,6 +144,15 @@
             <br>
             <button class="btn btn-primary">Шукати</button>
         </div>
+    </div>
+
+    <div class="menu-container notDisplay" id="add-offer">
+            <div class="menu-box">
+                <div class="close-box">
+                    <i class="fa fa-close" id="menu-close" onclick="notDisplayAddDiscount()"></i>
+                </div>
+            </div>
+
     </div>
     <main>
         <div class="main-container">

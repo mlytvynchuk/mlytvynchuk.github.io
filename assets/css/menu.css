@@ -38,6 +38,7 @@
 .menu-container .menu-box button :active {
   border: none;
 }
+
 .menu-container .menu-box select {
   width: 100% !important;
   border: none;
@@ -133,4 +134,8 @@ header .search-button {
     width: 95%;
     margin-right: 20px;
   }
+}
+#add {
+  background-color: black;
+  border: black;
 }

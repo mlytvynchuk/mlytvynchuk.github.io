@@ -19,3 +19,15 @@ function notDisplayDiscount() {
     menu.className = 'menu-container';
     menu.className += ' notDisplay';
 }
+
+function displayAddDiscount() {
+    var menu = document.getElementById('add-offer');
+    menu.className += 'menu-container';
+
+}
+
+function notDisplayAddDiscount() {
+    var menu = document.getElementById('add-offer');
+    menu.className = 'menu-container';
+    menu.className += ' notDisplay';
+}
