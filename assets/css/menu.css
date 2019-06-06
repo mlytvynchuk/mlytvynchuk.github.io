@@ -136,21 +136,28 @@ header .search-button {
     margin-right: 20px;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 320px) {
+  #discount-modal .menu-box {
+    width: 100%;
+    padding-right: 20px;
+  }
+  #discount-modal .close-box {
+    padding-top: 180px;
+  }
+}
+@media (min-width: 330px) and (max-width: 450px) {
   #discount-modal {
     padding-top: 150px;
     z-index: 12312;
   }
-  #filter-container > .menu-box {
-    margin-top: 0;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+  #discount-modal .close-box {
+    padding-top: 80px;
   }
 }
-@media (max-width: 450px) and (max-width: 410px) {
-  #discount-modal > .menu-box {
-    padding-top: 150px;
-  }
+#filter-container > .menu-box {
+  margin-top: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }

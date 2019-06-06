@@ -155,13 +155,27 @@ header{
         }
     }
 }
-
-@media(max-width:450px){
-
+@media(max-width: 320px){
     #discount-modal{
+
+        .menu-box{
+            width: 100%;
+            padding-right: 20px;
+        }
         
+        .close-box{
+            padding-top: 180px;
+        }
+    }
+}
+@media(min-width: 330px) and (max-width:450px){
+    
+    #discount-modal{
         padding-top: 150px;
         z-index: 12312;
+        .close-box{
+            padding-top: 80px;
+        }
     }
     
     }
@@ -172,4 +186,3 @@ header{
         height: 100%;
         width: 100%;
     }
-}
