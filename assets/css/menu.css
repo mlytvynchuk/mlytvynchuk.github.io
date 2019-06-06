@@ -38,6 +38,7 @@
 .menu-container .menu-box button :active {
   border: none;
 }
+
 .menu-container .menu-box select {
   width: 100% !important;
   border: none;
