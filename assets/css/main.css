@@ -115,6 +115,8 @@ header {
 @media (max-width: 730px) {
   .grid-item {
     float: none;
+    width: 350px;
+    height: 300px;
   }
   .grid {
     display: flex;
