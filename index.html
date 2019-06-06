@@ -68,34 +68,42 @@
                         <button class="search-button" type="submit"><i class="fa fa-search"></i></button>
                     </form>
                 </div>
-            </div>
-            <div>
 
-                <div class="navbar-toggler" onclick="displayModal()">
-                    <span class="navbar-toggler-text">Фільтри</span>
-                    <span class="navbar-toggler-icon"></span>
-                </div>
+
+
             </div>
-                <!-- user profile -->
-            <div class="profile">
-                <ul id="menu">
-                    <li><button class="navbar-brand">Профіль</button>
-                    <ul>
-                            <li><img src="assets/img/man.png" class="profile-img"></li>
-                            <li>
-                                <div class="blur-box">
-                                    <button class="navbar-brand" onclick="displayLikes()">Вподобання</button>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="blur-box">
-                                    <button class="navbar-brand" onclick="displayAddDiscount()">Додати</button>
-                                </div>
-                            </li>
+
+            <div>
+                <div class="d-flex">
+                    <div class="navbar-toggler" onclick="displayModal()">
+                        <span class="navbar-toggler-text">Фільтри</span>
+                        <span class="navbar-toggler-icon"></span>
+                    </div>
+                         <!-- user profile -->
+                <div class="profile">
+                    <ul id="menu">
+                        <li><input type="checkbox" id="user-photo"><img src="assets/img/user.png" id="profile-img">
+                        <ul class="but-style">
+                                <li><img src="assets/img/man.png" class="profile-img"></li>
+                                <li>
+                                    <div class="blur-box">
+                                        <button class="navbar-brand" onclick="displayLikes()">Вподобання</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="blur-box">
+                                        <button class="navbar-brand" onclick="displayAddDiscount()">Додати</button>
+                                    </div>
+                                </li>
+                        </ul>
+                        </li>
                     </ul>
-                    </li>
-                </ul>
+                </div>
+                </div>
+                
             </div>
+            
+           
         </nav>
     </header>
 
