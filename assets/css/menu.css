@@ -11,12 +11,11 @@
 .menu-container {
   position: fixed;
   display: flex;
-  overflow-y: auto;
   flex-direction: column;
   top: 0;
-  bottom: 0;
-  right: 0;
   left: 0;
+  height: 100%;
+  width: 100%;
   background: rgba(0, 0, 0, 0.9);
   z-index: 9999;
   justify-content: center;
@@ -38,7 +37,6 @@
 .menu-container .menu-box button :active {
   border: none;
 }
-
 .menu-container .menu-box select {
   width: 100% !important;
   border: none;
