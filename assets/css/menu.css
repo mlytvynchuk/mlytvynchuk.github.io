@@ -11,6 +11,7 @@
 .menu-container {
   position: fixed;
   display: flex;
+  overflow: auto;
   flex-direction: column;
   top: 0;
   left: 0;
@@ -112,11 +113,12 @@ header .search-button {
   font-size: 16px;
 }
 #discount-modal .menu-box {
-  width: 50%;
+  width: 60%;
 }
 @media (max-width: 500px) {
   #discount-modal .menu-box {
-    width: 90%;
+    width: 100%;
+    padding-top: 50px;
   }
 }
 .discount-details:after {
@@ -126,10 +128,27 @@ header .search-button {
 }
 @media (max-width: 1110px) {
   .menu-box {
-    margin-top: 120px;
+    width: 80%;
+    align-items: flex-start;
   }
   .menu-box .grid-item {
     width: 95%;
     margin-right: 20px;
+  }
+}
+@media (max-width: 400px) {
+  #discount-modal {
+    padding-top: 100px;
+    z-index: 12312;
+  }
+  #discount-modal > .menu-box {
+    margin-top: 120px;
+  }
+  #filter-container > .menu-box {
+    margin-top: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
   }
 }
