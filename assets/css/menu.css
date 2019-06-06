@@ -136,13 +136,10 @@ header .search-button {
     margin-right: 20px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   #discount-modal {
-    padding-top: 100px;
+    padding-top: 150px;
     z-index: 12312;
-  }
-  #discount-modal > .menu-box {
-    margin-top: 120px;
   }
   #filter-container > .menu-box {
     margin-top: 0;
@@ -150,5 +147,10 @@ header .search-button {
     left: 0;
     height: 100%;
     width: 100%;
+  }
+}
+@media (max-width: 450px) and (max-width: 410px) {
+  #discount-modal > .menu-box {
+    padding-top: 150px;
   }
 }
