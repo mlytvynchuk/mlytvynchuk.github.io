@@ -76,6 +76,26 @@
                     <span class="navbar-toggler-icon"></span>
                 </div>
             </div>
+                <!-- user profile -->
+            <div class="profile">
+                <ul id="menu">
+                    <li><button class="navbar-brand">Профіль</button>
+                    <ul>
+                            <li><img src="assets/img/man.png" class="profile-img"></li>
+                            <li>
+                                <div class="blur-box">
+                                    <button class="navbar-brand" onclick="displayLikes()">Вподобання</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="blur-box">
+                                    <button class="navbar-brand" onclick="displayAddDiscount()">Додати</button>
+                                </div>
+                            </li>
+                    </ul>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -144,7 +164,74 @@
             <br>
             <button class="btn btn-primary">Шукати</button>
         </div>
+
+        <!-- user profile -->
+        <div class="profile">
+            <ul id="menu">
+                <li><button class="navbar-brand">Профіль</button>
+                <ul>
+                        <li><img src="assets/img/man.png" class="profile-img"></li>
+                        <li>
+                            <div class="blur-box">
+                                <button class="navbar-brand" onclick="displayLikes()">Вподобання</button>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="blur-box">
+                                <button class="navbar-brand" onclick="displayAddDiscount()">Додати</button>
+                            </div>
+                        </li>
+                </ul>
+                </li>
+            </ul>
+        </div>
     </div>
+
+    <!--  user profile  -->
+
+    <div class="menu-container notDisplay" id="add-discount">
+        <div class="menu-box">
+            <div class="close-box">
+                <i class="fa fa-close" id="menu-close" onclick="notDisplayAddDiscount()"></i>
+            </div>
+
+            <h2>Додати пропозицію</h2>
+
+            <form action="/action_page.php">
+                <div class="search-container">
+                <label for="add-name"><b>Назва закладу</b></label><br>
+                <input type="text" placeholder="Введіть назву закладу" name="add-name" required>
+                <br>
+                <br>
+                <label for="add-offer"><b>Пропозиція</b></label><br>
+                <input type="text" placeholder="Введіть умови знижки" name="add-offer" required>
+                <br>
+                <br>
+                <label for="add-location"><b>Розташування</b></label><br>
+                <input type="text" placeholder="Введіть назву вулиці" name="add-location" required>
+                <br>
+                <br>
+                 <label for="add-photo"><b>Додати зображення</b></label><br>
+                <input type="file" name="photo" multiple accept="image/*,image/jpeg">
+                </div>
+                <br>
+                <br>
+                <button class="btn btn-primary" type="submit">Додати</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="menu-container notDisplay" id="likes-container">
+            <div class="menu-box">
+                <div class="close-box">
+                    <i class="fa fa-close" id="menu-close" onclick="notDisplayLikes()"></i>
+                </div>
+
+                <h2>List of favourites cafes</h2>
+            </div>
+    </div>
+
+
 
     </div>
     <main>
