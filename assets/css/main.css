@@ -131,3 +131,12 @@ header {
     text-align: center;
   }
 }
+.beer {
+  background-image: url(../img/pivas.jpg);
+}
+.coffee {
+  background-image: url(../img/coffee.jpg);
+}
+.pizza {
+  background-image: url(../img/pizza.jpeg);
+}
