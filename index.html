@@ -79,31 +79,31 @@
                         <span class="navbar-toggler-text">Фільтри</span>
                         <span class="navbar-toggler-icon"></span>
                     </div>
-                         <!-- user profile -->
-                <div class="profile">
-                    <ul id="menu">
-                        <li><input type="checkbox" id="user-photo"><img src="assets/img/user.png" id="profile-img">
-                        <ul class="but-style">
-                                <li><img src="assets/img/man.png" class="profile-img"></li>
-                                <li>
-                                    <div class="blur-box">
-                                        <button class="navbar-brand" onclick="displayLikes()">Вподобання</button>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="blur-box">
-                                        <button class="navbar-brand" onclick="displayAddDiscount()">Додати</button>
-                                    </div>
-                                </li>
+                    <!-- user profile -->
+                    <div class="profile">
+                        <ul id="menu">
+                            <li><input type="checkbox" id="user-photo"><img src="assets/img/user.png" id="profile-img">
+                                <ul class="but-style">
+                                    <li><img src="assets/img/man.png" class="profile-img"></li>
+                                    <li>
+                                        <div class="blur-box">
+                                            <button class="navbar-brand" onclick="displayLikes()">Вподобання</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="blur-box">
+                                            <button class="navbar-brand" onclick="displayAddDiscount()">Додати</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
-                        </li>
-                    </ul>
+                    </div>
                 </div>
-                </div>
-                
+
             </div>
-            
-           
+
+
         </nav>
     </header>
 
@@ -114,7 +114,7 @@
                 <i class="fa fa-close" id="menu-close" onclick="notDisplayDiscount()"></i>
             </div>
             <div>
-                <div class="grid-item height320" style="background-image: url(../assets/img/pivas.jpg)!important" onclick="displayDiscount()">
+                <div class="grid-item height320 beer" onclick="displayDiscount()">
                     <div class="overlay-dark">
                         <div class="discountCard">
                             <h3 class="discountTitle">Пиво за пів ціни </h3>
@@ -177,7 +177,7 @@
         <div class="profile">
             <ul id="menu">
                 <li><button class="navbar-brand">Профіль</button>
-                <ul>
+                    <ul>
                         <li><img src="assets/img/man.png" class="profile-img"></li>
                         <li>
                             <div class="blur-box">
@@ -189,7 +189,7 @@
                                 <button class="navbar-brand" onclick="displayAddDiscount()">Додати</button>
                             </div>
                         </li>
-                </ul>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -207,20 +207,20 @@
 
             <form action="/action_page.php">
                 <div class="search-container">
-                <label for="add-name"><b>Назва закладу</b></label><br>
-                <input type="text" placeholder="Введіть назву закладу" name="add-name" required>
-                <br>
-                <br>
-                <label for="add-offer"><b>Пропозиція</b></label><br>
-                <input type="text" placeholder="Введіть умови знижки" name="add-offer" required>
-                <br>
-                <br>
-                <label for="add-location"><b>Розташування</b></label><br>
-                <input type="text" placeholder="Введіть назву вулиці" name="add-location" required>
-                <br>
-                <br>
-                 <label for="add-photo"><b>Додати зображення</b></label><br>
-                <input type="file" name="photo" multiple accept="image/*,image/jpeg">
+                    <label for="add-name"><b>Назва закладу</b></label><br>
+                    <input type="text" placeholder="Введіть назву закладу" name="add-name" required>
+                    <br>
+                    <br>
+                    <label for="add-offer"><b>Пропозиція</b></label><br>
+                    <input type="text" placeholder="Введіть умови знижки" name="add-offer" required>
+                    <br>
+                    <br>
+                    <label for="add-location"><b>Розташування</b></label><br>
+                    <input type="text" placeholder="Введіть назву вулиці" name="add-location" required>
+                    <br>
+                    <br>
+                    <label for="add-photo"><b>Додати зображення</b></label><br>
+                    <input type="file" name="photo" multiple accept="image/*,image/jpeg">
                 </div>
                 <br>
                 <br>
@@ -230,13 +230,13 @@
     </div>
 
     <div class="menu-container notDisplay" id="likes-container">
-            <div class="menu-box">
-                <div class="close-box">
-                    <i class="fa fa-close" id="menu-close" onclick="notDisplayLikes()"></i>
-                </div>
-
-                <h2>List of favourites cafes</h2>
+        <div class="menu-box">
+            <div class="close-box">
+                <i class="fa fa-close" id="menu-close" onclick="notDisplayLikes()"></i>
             </div>
+
+            <h2>List of favourites cafes</h2>
+        </div>
     </div>
 
 
@@ -265,7 +265,7 @@
                     </div>
                 </div>
                 <div class="grid" onclick="displayDiscount()">
-                    <div class="grid-item white-color" style="background-image: url(../assets/img/coffee.jpg)!important">
+                    <div class="grid-item white-color coffee">
                         <div class="overlay-light">
                             <div class="discountCard">
                                 <h3 class="discountTitle">Кава 1+1=3</h3>
@@ -283,7 +283,7 @@
                             </div>
                         </div>
                         <div class="grid" onclick="displayDiscount()">
-                            <div class="grid-item height300" style="background-image: url(../assets/img/coffee.jpg)!important">
+                            <div class="grid-item height300 coffee">
                                 <div class="overlay-light">
                                     <div class="discountCard">
                                         <h3 class="discountTitle">Кава 1+1=3</h3>
@@ -291,7 +291,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid-item" style="background-image: url(../assets/img/pivas.jpg)!important" onclick="displayDiscount()">
+                            <div class="grid-item beer" onclick="displayDiscount()">
                                 <div class="overlay-dark">
                                     <div class="discountCard">
                                         <h3 class="discountTitle">Пиво за пів ціни </h3>
@@ -301,7 +301,7 @@
                             </div>
 
                             <div class="grid">
-                                <div class="grid-item white-color height300" style="background-image: url(../assets/img/coffee.jpg)!important" onclick="displayDiscount()">
+                                <div class="grid-item white-color height300 coffee" onclick="displayDiscount()">
                                     <div class="overlay-light">
                                         <div class="discountCard">
                                             <h3 class="discountTitle">Кава 1+1=3</h3>
